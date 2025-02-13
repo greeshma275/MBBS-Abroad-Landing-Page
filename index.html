@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study MBBS Abroad</title>
+    <meta name="description" content="Explore top MBBS programs abroad in Russia, Uzbekistan, Kazakhstan, and more. Apply now!">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+    <style>
+       /* Body Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121826; /* Dark aesthetic base color */
+    color: white;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Background Image with Opacity */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('bg.jpg') center/cover no-repeat;
+    opacity: 0.3; /* Adjust opacity as needed */
+    z-index: -1;
+}
+
+        
+        @keyframes bgAnimation {
+            0% { background: linear-gradient(135deg, #1B1F3B, #2A2E5E, #009688); }
+            100% { background: linear-gradient(135deg, #2A2E5E, #009688, #1B1F3B); }
+        }
+
+        /* CTA Button */
+        /* Updated Button */
+.btn-primary {
+    font-family: 'Poppins', sans-serif;
+    background-color: #3ec0a4; /* Vibrant Indigo */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+}
+.btn-primary:hover {
+    background-color: #0d6241; /* Darker Indigo on Hover */
+    transform: scale(1.05);
+}
+
+
+.card {
+    background: linear-gradient(135deg, #313962, #346060);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(127, 90, 240, 0.3);
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(127, 90, 240, 0.5);
+}
+
+
+        .form-container {
+            background: linear-gradient(135deg, #79a4bb, #374A85);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        html {
+    scroll-behavior: smooth;
+}
+
+    </style>
+</head>
+<body>
+<!-- Hero Section -->
+<section class="relative flex justify-center items-center min-h-screen px-6 text-center overflow-hidden">
+
+    <div class="relative bg-white bg-opacity-10 backdrop-blur-xl border border-gray-500 rounded-3xl p-12 shadow-2xl transform transition duration-500 hover:scale-105 max-w-4xl">
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg leading-tight animate-fadeIn">
+            Study <span class="text-[#3ec0a4]">MBBS</span> Abroad
+        </h1>
+        <p class="mt-6 text-2xl text-gray-200 opacity-90 font-light">Your dream medical career starts here.</p>
+
+        <!-- Call To Action Button (Increased Margin) -->
+        <a href="#lead-form" class="mt-20 inline-block px-8 py-4 text-xl font-semibold text-white bg-[#3ec0a4] rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 hover:bg-[#2aa38f] active:scale-95 glow-button" onclick="scrollToForm()">Apply Now</a>
+    </div>
+
+    <!-- Floating Glowing Elements -->
+    <div class="absolute top-10 left-10 w-24 h-24 bg-[#3ec0a4] rounded-full opacity-30 blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-10 right-20 w-16 h-16 bg-[#1e3a8a] rounded-full opacity-40 blur-3xl animate-pulse"></div>
+</section>
+
+<style>
+/* Keyframe Animation for Background */
+@keyframes gradientBlur {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.animate-gradientBlur {
+    background-size: 200% 200%;
+    animation: gradientBlur 6s infinite alternate;
+}
+
+/* Glowing Button Effect */
+.glow-button {
+    box-shadow: 0 0 15px rgba(62, 192, 164, 0.8);
+}
+.glow-button:hover {
+    box-shadow: 0 0 25px rgba(62, 192, 164, 1);
+}
+</style>
+
+
+
+
+<!-- Why Study MBBS Abroad - Image and Text Card -->
+<section class="py-16 px-6 flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 p-6">
+        <div class="bg-gradient-to-r from-gray-700 to-gray-300 rounded-xl shadow-lg transform transition duration-300">
+            <img src="abroad.jpg" alt="Why Study MBBS Abroad" class="w-full h-96 object-cover rounded-lg shadow-md">
+        </div>
+    </div>
+    
+    
+    
+    <div class="md:w-1/2 md:pl-10 text-left">
+        <h2 class="text-3xl font-bold mb-6">Why Study MBBS Abroad?</h2>
+        <p class="text-lg">Affordable tuition, globally recognized degrees, and modern medical facilities with world-class education.</p>
+        <ul class="mt-4 space-y-2">
+            <li>✅ Lower tuition fees</li>
+            <li>✅ Internationally accredited universities</li>
+            <li>✅ Advanced medical technology</li>
+            <li>✅ Global career opportunities</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Top Countries - Card Grid with Images -->
+<section class="py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-6">Top Countries for MBBS</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card text-center">
+            <img src="russia.jpg" alt="Russia" class="rounded-t-lg h-40 w-full object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold">🇷🇺 Russia</h3>
+                <p>Leading medical universities with affordable fees.</p>
+            </div>
+        </div>
+        <div class="card text-center">
+            <img src="uzbekistan.jpg" alt="Uzbekistan" class="rounded-t-lg h-40 w-full object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold">🇺🇿 Uzbekistan</h3>
+                <p>Modern infrastructure with English-taught programs.</p>
+            </div>
+        </div>
+        <div class="card text-center">
+            <img src="kazakhstan.jpg" alt="Kazakhstan" class="rounded-t-lg h-40 w-full object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold">🇰🇿 Kazakhstan</h3>
+                <p>Top-ranked medical universities with global recognition.</p>
+            </div>
+        </div>
+        <div class="card text-center">
+            <img src="philippines.jpg" alt="Philippines" class="rounded-t-lg h-40 w-full object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold">🇵🇭 Philippines</h3>
+                <p>US-based curriculum and high FMGE passing rate.</p>
+            </div>
+        </div>
+        <div class="card text-center">
+            <img src="georgia.jpg" alt="Georgia" class="rounded-t-lg h-40 w-full object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold">🇬🇪 Georgia</h3>
+                <p>Safe environment and world-class universities.</p>
+            </div>
+        </div>
+        <div class="card text-center">
+            <img src="egypt.jpg" alt="Egypt" class="rounded-t-lg h-40 w-full object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-bold">🇪🇬 Egypt</h3>
+                <p>Rich medical history and modern learning techniques.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Admission Process -->
+    <section class="py-26 px-16">
+        <h2 class="text-7xl font-extrabold mb-10">Admission Process & Eligibility</h2>
+        <ul class="max-w-6xl text-3xl font-medium">
+            <li class="mb-6">✔ Submit application and documents</li>
+            <li class="mb-6">✔ Receive admission letter</li>
+            <li class="mb-6">✔ Apply for student visa</li>
+            <li class="mb-6">✔ Book flight and start studies!</li>
+        </ul>
+    </section>
+    
+    
+
+    <!-- Lead Form -->
+    <section class="py-16 px-6" id="lead-form">
+        <h2 class="text-3xl font-bold text-center mb-6">Apply Now</h2>
+        <form id="contactForm" class="max-w-md mx-auto form-container">
+            <input type="text" id="name" placeholder="Your Name" class="w-full p-3 border border-gray-500 rounded mb-4 bg-[#374A85]" required>
+            <input type="email" id="email" placeholder="Your Email" class="w-full p-3 border border-gray-500 rounded mb-4 bg-[#374A85]" required>
+            <input type="tel" id="phone" placeholder="Your Phone" class="w-full p-3 border border-gray-500 rounded mb-4 bg-[#374A85]" required>
+            <select id="country" class="w-full p-3 border border-gray-500 rounded mb-4 bg-[#374A85]">
+                <option>Select Preferred Country</option>
+                <option>Russia</option>
+                <option>Uzbekistan</option>
+                <option>Kazakhstan</option>
+                <option>Philippines</option>
+                <option>Georgia</option>
+                <option>Egypt</option>
+            </select>
+            <button type="submit" class="btn-primary w-full">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
